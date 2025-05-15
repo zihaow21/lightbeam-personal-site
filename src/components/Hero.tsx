@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -26,11 +25,12 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="relative h-64 md:h-80 lg:h-96 bg-muted rounded-lg overflow-hidden order-first lg:order-last">
-          {/* This is a placeholder for a profile image */}
-          <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-            <p className="text-lg font-medium">Professional Profile Image</p>
-          </div>
+        <div className="relative h-80 md:h-96 lg:h-[30rem] bg-muted rounded-lg overflow-hidden order-first lg:order-last">
+          <img 
+            src={import.meta.env.BASE_URL + "profile_horizontal.jpg"} 
+            alt="Zihao Wang" 
+            className="w-full h-full object-cover object-[center_10%]"
+          />
         </div>
       </div>
     </section>
