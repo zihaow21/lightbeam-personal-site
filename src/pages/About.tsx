@@ -22,7 +22,7 @@ const About = () => {
         <div className="grid gap-8 md:grid-cols-2 items-center mb-16">
           <div className="aspect-square rounded-lg overflow-hidden">
             <img 
-              src="/profile.jpg" 
+              src={import.meta.env.BASE_URL + "profile.jpg"}
               alt="Zihao Wang" 
               className="w-full h-full object-cover"
             />
