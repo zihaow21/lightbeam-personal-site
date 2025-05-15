@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -21,8 +20,12 @@ const About = () => {
       
       <div className="container py-16">
         <div className="grid gap-8 md:grid-cols-2 items-center mb-16">
-          <div className="bg-muted aspect-square rounded-lg flex items-center justify-center">
-            <p className="text-muted-foreground">Professional Profile Image</p>
+          <div className="aspect-square rounded-lg overflow-hidden">
+            <img 
+              src="/profile.jpg" 
+              alt="Zihao Wang" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold">Zihao Wang, Ph.D.</h2>
