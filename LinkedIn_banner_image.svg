@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient and AI-themed pattern -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2980" />
+      <stop offset="100%" stop-color="#26d0ce" />
+    </linearGradient>
+    <pattern id="ai-pattern" patternUnits="userSpaceOnUse" width="100" height="100" patternTransform="scale(2) rotate(10)">
+      <path d="M0 0 L20 20 M80 0 L100 20 M0 80 L20 100 M80 80 L100 100" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <circle cx="50" cy="50" r="3" fill="rgba(255,255,255,0.2)" />
+      <circle cx="30" cy="70" r="2" fill="rgba(255,255,255,0.15)" />
+      <circle cx="70" cy="30" r="2" fill="rgba(255,255,255,0.15)" />
+    </pattern>
+  </defs>
+  <rect width="1584" height="396" fill="url(#bg-gradient)" />
+  <rect width="1584" height="396" fill="url(#ai-pattern)" />
+  
+  <!-- Decorative elements - neural network nodes and connections -->
+  <g opacity="0.7">
+    <!-- Left side neural network -->
+    <circle cx="100" cy="40" r="4" fill="white" opacity="0.8" />
+    <circle cx="150" cy="60" r="3" fill="white" opacity="0.7" />
+    <circle cx="80" cy="80" r="3" fill="white" opacity="0.7" />
+    <circle cx="130" cy="100" r="4" fill="white" opacity="0.8" />
+    <line x1="100" y1="40" x2="150" y2="60" stroke="white" stroke-width="1" opacity="0.5" />
+    <line x1="100" y1="40" x2="80" y2="80" stroke="white" stroke-width="1" opacity="0.5" />
+    <line x1="150" y1="60" x2="130" y2="100" stroke="white" stroke-width="1" opacity="0.5" />
+    <line x1="80" y1="80" x2="130" y2="100" stroke="white" stroke-width="1" opacity="0.5" />
+    
+    <!-- Right side neural network -->
+    <circle cx="1484" cy="40" r="4" fill="white" opacity="0.8" />
+    <circle cx="1434" cy="60" r="3" fill="white" opacity="0.7" />
+    <circle cx="1504" cy="80" r="3" fill="white" opacity="0.7" />
+    <circle cx="1454" cy="100" r="4" fill="white" opacity="0.8" />
+    <line x1="1484" y1="40" x2="1434" y2="60" stroke="white" stroke-width="1" opacity="0.5" />
+    <line x1="1484" y1="40" x2="1504" y2="80" stroke="white" stroke-width="1" opacity="0.5" />
+    <line x1="1434" y1="60" x2="1454" y2="100" stroke="white" stroke-width="1" opacity="0.5" />
+    <line x1="1504" y1="80" x2="1454" y2="100" stroke="white" stroke-width="1" opacity="0.5" />
+
+    <!-- Data visualization elements -->
+    <path d="M240 300 L280 260 L320 280 L360 230 L400 250 L440 220" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" />
+    <path d="M1240 300 L1280 270 L1320 290 L1360 240 L1400 260 L1440 220" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" />
+    
+    <!-- Digital circuit pattern -->
+    <path d="M500 310 L530 310 L530 330 L560 330 L560 310 L590 310" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+    <path d="M900 310 L930 310 L930 290 L960 290 L960 310 L990 310" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" />
+  </g>
+  
+  <!-- Name -->
+  <text x="792" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">ZIHAO WANG, Ph.D.</text>
+  
+  <!-- Main Title - Modified as requested -->
+  <text x="792" y="160" font-family="Arial, sans-serif" font-size="24" font-weight="normal" fill="white" text-anchor="middle">Commitment · Communication · Collaboration</text>
+  
+  <!-- Subtitle with dots -->
+  <text x="792" y="210" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="white" text-anchor="middle">Research · Application · Leadership · Entrepreneurship</text>
+  
+  <!-- Bottom affiliations -->
+  <text x="792" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="white" text-anchor="middle">Emory University · Carnegie Mellon University</text>
+</svg>
