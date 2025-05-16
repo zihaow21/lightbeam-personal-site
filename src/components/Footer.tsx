@@ -6,15 +6,15 @@ const Footer = () => {
     <footer className="bg-background border-t py-8">
       <div className="container grid gap-8 md:grid-cols-2">
         <div>
-          <h3 className="text-lg font-medium mb-4">Zihao Wang, Ph.D.</h3>
-          <p className="text-muted-foreground">
+          <h3 className="text-lg font-medium mb-4 text-center">Zihao Wang, Ph.D.</h3>
+          <p className="text-muted-foreground text-center">
             Data Science Leader, Researcher & AI Entrepreneur
           </p>
         </div>
         
         <div>
-          <h3 className="text-lg font-medium mb-4">Quick Links</h3>
-          <ul className="space-y-2">
+          <h3 className="text-lg font-medium mb-4 text-center">Quick Links</h3>
+          <ul className="space-y-2 text-center">
             <li>
               <Link to="/" className="text-muted-foreground hover:text-foreground">Home</Link>
             </li>

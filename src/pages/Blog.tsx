@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Placeholder blog posts with categories
 const blogPosts = [
+  /* 
   {
     id: 1,
     title: "Advances in Large Language Models for Conversational AI",
@@ -48,6 +48,7 @@ const blogPosts = [
     category: "ASR",
     image: "/placeholder.svg"
   }
+  */
 ];
 
 const categories = ["All", "AI", "Collaboration", "Leadership", "Entrepreneurship", "Miscellaneous"];
@@ -55,9 +56,9 @@ const categories = ["All", "AI", "Collaboration", "Leadership", "Entrepreneurshi
 const Blog = () => {
   const [activeCategory, setActiveCategory] = React.useState("All");
   
-  const filteredPosts = activeCategory === "All" 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === activeCategory);
+  // const filteredPosts = activeCategory === "All" 
+  //   ? blogPosts 
+  //   : blogPosts.filter(post => post.category === activeCategory);
 
   return (
     <Layout>
@@ -65,7 +66,7 @@ const Blog = () => {
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Blog</h1>
           <p className="text-lg text-center text-muted-foreground max-w-2xl mx-auto">
-            Thoughts, insights, and technical discussions on AI, collaboration, leadership and entrepreneurship.
+            Coming soon! This page will feature thoughts, insights, and technical discussions on AI, collaboration, leadership and entrepreneurship.
           </p>
         </div>
       </div>
@@ -85,6 +86,10 @@ const Blog = () => {
           </TabsList>
           
           <TabsContent value={activeCategory} className="mt-0">
+            <div className="text-center py-10">
+              <p className="text-lg text-muted-foreground">Articles in this category coming soon!</p>
+            </div>
+            {/* Blog content templates commented out
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {filteredPosts.map(post => (
                 <Card key={post.id} className="flex flex-col h-full">
@@ -110,6 +115,7 @@ const Blog = () => {
                 </Card>
               ))}
             </div>
+            */}
           </TabsContent>
         </Tabs>
       </div>
