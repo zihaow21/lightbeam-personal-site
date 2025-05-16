@@ -1,14 +1,13 @@
-
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const publications = [
   {
     title: "InterviewBot: Real-Time End-to-End Dialogue System for Interviewing Students for College Admission",
     authors: "Wang, Z.; Keyes, N.; Crawford, T.; Choi, J.D.",
-    journal: "Information 2023, 14, 460",
-    link: "https://doi.org/10.3390/info14080460"
+    journal: "Information 2023, 14, 460"
   },
   {
     title: "FCC: Fusing Conversation History and Candidate Provenance for Contextual Response Ranking in Dialogue Systems",
@@ -22,19 +21,54 @@ const publications = [
   },
   {
     title: "Emora: An Inquisitive Social Chatbot Who Cares For You",
-    authors: "Sarah E. Finch, James D. Finch, Ali Ahmadvand, et al.",
-    journal: "In 3rd Proceedings of Alexa Prize (Alexa Prize 2019)",
-    note: "1st Place Winner"
-  }
+    authors: "Sarah E. Finch, James D. Finch, Ali Ahmadvand, Ingyu (Jason) Choi, Xiangjue Dong, Ruixiang Qi, Harshita Sahijwani, Sergey Volokhin, Zihan Wang, Zihao Wang, Jinho D. Choi.",
+    journal: "In 3rd Proceedings of Alexa Prize (Alexa Prize 2019) Amazon re: Invent 2019 Conference",
+  },
+  {
+    title: "Emory IrisBot: An Open-Domain Conversational Bot for Personalized Information Access",
+    authors: "Ahmadvand, A., Choi, I.J., Sahijwani, H., Schmidt, J., Sun, M., Volokhin, S., Wang, Z. and Agichtein, E.",
+    journal: "In 2nd Proceedings of Alexa Prize (Alexa Prize 2018) Amazon re:Invent 2018 Conference",
+  },
+  {
+    title: "Emersonbot: Information-Focused Conversational AI Emory University at the Alexa Prize 2017 Challenge",
+    authors: "Wang, Z., Choi, J., Ahmadvand, A., Karisani, P., & Agichtein, E.",
+    journal: "In 1st Proceedings of Alexa Prize (Alexa Prize 2017) on Amazon re:Invent 2017 Conference",
+  },
+  {
+    title: "Signal inpainting on graphs via total variation minimization",
+    authors: "Chen, S., Sandryhaila, A., Lederman, G., Wang, Z., Moura, J. M., Rizzo, P., & Kovacevic,J.",
+    journal: "In Acoustics, Speech and Signal Processing (ICASSP), 2014 IEEE International Conference on (pp. 8267-8271). IEEE",
+  },
+  {
+    title: "Damage quantification and localization algorithms for indirect SHM of bridges",
+    authors: "Lederman, G., Wang, Z., Bielak, J., Noh, H., Garrett, J. H., Chen, S., & Rizzo, P.",
+    journal: "In Proc. Int. Conf. Bridge Maint., Safety Manag.",
+  },
+  {
+    title: "Comparison of sparse representation and fourier discriminant methods: damage location classification in indirect lab-scale bridge structural health monitoring.",
+    authors: "Wang, Z., Chen, S., Lederman, G., Cerda, F., Bielak, J., Garrett, J. H., & Kovaˇcevi´c, J.",
+    journal: "In Structures Congress 2013: Bridging Your Passion with Your Profession (pp. 436-446)",
+  },
 ];
 
 const PublicationsSection = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedPublications = showAll ? publications : publications.slice(0, 3);
+  
   return (
     <section className="py-16 bg-background">
       <div className="container">
-        <h2 className="text-3xl font-bold mb-10 text-center">Selected Publications</h2>
+        <h2 className="text-3xl font-bold mb-10 text-center">Publications</h2>
+        <div className="mt-8 mb-6 text-center">
+          <Button variant="outline" asChild>
+            <a href="https://etd.library.emory.edu/concern/etds/dz010r397" target="_blank" rel="noopener noreferrer">
+              View Ph.D. Dissertation
+            </a>
+          </Button>
+        </div>
+        
         <div className="grid gap-6">
-          {publications.map((pub, idx) => (
+          {displayedPublications.map((pub, idx) => (
             <Card key={idx}>
               <CardHeader>
                 <CardTitle className="text-lg">{pub.title}</CardTitle>
@@ -42,24 +76,34 @@ const PublicationsSection = () => {
               </CardHeader>
               <CardContent className="flex flex-wrap justify-between items-center">
                 <div className="text-muted-foreground">{pub.journal}</div>
-                {pub.link && (
-                  <Button variant="outline" size="sm" className="mt-2 sm:mt-0" asChild>
-                    <a href={pub.link} target="_blank" rel="noopener noreferrer">View Publication</a>
-                  </Button>
-                )}
-                {pub.note && <div className="w-full mt-2 text-sm font-medium text-primary">{pub.note}</div>}
               </CardContent>
             </Card>
           ))}
         </div>
         
-        <div className="mt-8 text-center">
-          <Button variant="outline" asChild>
-            <a href="https://www.emorynlp.org/theses-dissertations/phd-dissertation-2023-zihao-wang" target="_blank" rel="noopener noreferrer">
-              View Ph.D. Dissertation
-            </a>
-          </Button>
-        </div>
+        {!showAll && publications.length > 3 && (
+          <div className="mt-6 text-center">
+            <Button 
+              variant="ghost" 
+              onClick={() => setShowAll(true)}
+              className="text-primary hover:text-primary/80"
+            >
+              View all publications <ChevronDown className="ml-1 h-4 w-4" />
+            </Button>
+          </div>
+        )}
+        
+        {showAll && (
+          <div className="mt-6 text-center">
+            <Button 
+              variant="ghost" 
+              onClick={() => setShowAll(false)}
+              className="text-primary hover:text-primary/80"
+            >
+              Show fewer publications <ChevronUp className="ml-1 h-4 w-4" />
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

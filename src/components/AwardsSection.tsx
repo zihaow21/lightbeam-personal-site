@@ -3,6 +3,10 @@ import React from "react";
 
 const awards = [
   {
+    title: "ACL Program Committee Member",
+    details: "2023"
+  },
+  {
     title: "1st place winner team",
     details: "Amazon Alexa Prize Grand Challenge 2019",
     prize: "$250,000 research grant and $500,000 prize"
@@ -19,10 +23,6 @@ const awards = [
   {
     title: "Fenves Travel Award",
     details: "Carnegie Mellon University, 2014"
-  },
-  {
-    title: "ACL Program Committee Member",
-    details: "2023"
   }
 ];
 

@@ -1,4 +1,3 @@
-
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
 
@@ -32,27 +31,31 @@ const experiences = [
     period: "March 2023 – August 2024",
     location: "Atlanta, US",
     description: [
-      "Developed LLM-powered systems for multiple business domains including customer embedding models",
-      "Created machine translation and information retrieval systems enhancing search relevance",
-      "Applied deep learning and NLP techniques to solve challenges in retail personalization"
+      "Developed LLM-powered systems for multiple business domains including customer embedding models, including customer embedding models, product recommendation engines, personalized profile prediction, and intelligent query reformulation",
+      "Created machine translation and information retrieval systems that significantly enhanced search relevance and overall customer satisfaction",
+      "Applied deep learning and NLP techniques to solve complex challenges in retail personalization and customer experience"
     ]
   },
   {
     title: "Researcher",
-    company: "Initialview & Emory",
-    period: "September 2021 – May 2023",
+    company: "Initialview, Amazon, Uber, IBM & Emory",
+    period: "August 2016 – May 2023",
     location: "Atlanta, US",
     description: [
-      "Created an end-to-end interviewbot built on BlenderBot architecture for college admissions",
+      "Created an end-to-end interviewbot by re-engineering language model BlenderBot architecture for college admissions",
       "Developed a multi-task speaker diarization model to clean noisy interview data",
-      "Published research results in peer-reviewed academic journals"
+      "Led and participated in building state-of-the-art chatbot that won 2019 Amazon Alexa Prize",
+      "Built a temporal cross-source information retrieval system for DoD applications",
+      "Built a state-of-art reranking system for conversational AI",
+      "Built a Rideshare dispatching classifier",
+      "Built a context-aware text-to-speech model",
     ]
   }
 ];
 
 const ExperienceSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section id="experience" className="py-16 bg-background">
       <div className="container">
         <h2 className="text-3xl font-bold mb-10 text-center">Professional Experience</h2>
         <div className="grid gap-8 md:grid-cols-2">

@@ -50,7 +50,7 @@ const blogPosts = [
   }
 ];
 
-const categories = ["All", "LLMs", "Information Retrieval", "Machine Learning", "Conversational AI", "ASR"];
+const categories = ["All", "AI", "Collaboration", "Leadership", "Entrepreneurship", "Miscellaneous"];
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = React.useState("All");
@@ -65,7 +65,7 @@ const Blog = () => {
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Blog</h1>
           <p className="text-lg text-center text-muted-foreground max-w-2xl mx-auto">
-            Thoughts, insights, and technical discussions on AI, machine learning, and data science.
+            Thoughts, insights, and technical discussions on AI, collaboration, leadership and entrepreneurship.
           </p>
         </div>
       </div>
