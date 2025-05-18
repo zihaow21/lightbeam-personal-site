@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with light color -->
+  <rect width="1200" height="630" fill="#f0f4f8" />
+  
+  <!-- Central concept illustration -->
+  <g transform="translate(600, 315)">
+    <!-- Central dividing element -->
+    <rect x="-10" y="-150" width="20" height="300" fill="#2c3e50" rx="5" ry="5" />
+    <circle cx="0" cy="-170" r="15" fill="#2c3e50" />
+    <circle cx="0" cy="170" r="15" fill="#2c3e50" />
+    
+    <!-- Technical Expertise Side (Left) -->
+    <g transform="translate(-220, 0)">
+      <!-- Brain/Circuit graphic -->
+      <circle cx="0" cy="0" r="150" fill="#3498db" opacity="0.85" />
+      
+      <!-- Brain circuit patterns -->
+      <path d="M-80,-50 C-40,-80, 40,-80, 80,-50" stroke="white" stroke-width="4" fill="none" />
+      <path d="M-80,0 C-40,-30, 40,-30, 80,0" stroke="white" stroke-width="4" fill="none" />
+      <path d="M-80,50 C-40,20, 40,20, 80,50" stroke="white" stroke-width="4" fill="none" />
+      
+      <!-- Circuit nodes -->
+      <circle cx="-60" cy="-50" r="8" fill="white" />
+      <circle cx="0" cy="-70" r="8" fill="white" />
+      <circle cx="60" cy="-50" r="8" fill="white" />
+      <circle cx="-60" cy="0" r="8" fill="white" />
+      <circle cx="0" cy="-20" r="8" fill="white" />
+      <circle cx="60" cy="0" r="8" fill="white" />
+      <circle cx="-60" cy="50" r="8" fill="white" />
+      <circle cx="0" cy="30" r="8" fill="white" />
+      <circle cx="60" cy="50" r="8" fill="white" />
+      
+      <!-- Vertical circuit lines -->
+      <line x1="-60" y1="-50" x2="-60" y2="50" stroke="white" stroke-width="3" />
+      <line x1="0" y1="-70" x2="0" y2="30" stroke="white" stroke-width="3" />
+      <line x1="60" y1="-50" x2="60" y2="50" stroke="white" stroke-width="3" />
+      
+      <!-- Label - repositioned above the circle -->
+      <rect x="-150" y="-180" width="300" height="50" rx="10" ry="10" fill="#2c3e50" />
+      <text x="0" y="-148" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">TECHNICAL EXPERTISE</text>
+    </g>
+    
+    <!-- Execution Speed Side (Right) -->
+    <g transform="translate(220, 0)">
+      <!-- Rocket/arrow graphic -->
+      <circle cx="0" cy="0" r="150" fill="#e74c3c" opacity="0.85" />
+      
+      <!-- Stylized rocket/arrow -->
+      <path d="M-80,80 L0,-80 L80,80 L0,40 Z" stroke="white" stroke-width="4" fill="white" />
+      
+      <!-- Speed lines -->
+      <line x1="-60" y1="60" x2="-90" y2="90" stroke="white" stroke-width="3" />
+      <line x1="-30" y1="60" x2="-45" y2="100" stroke="white" stroke-width="3" />
+      <line x1="30" y1="60" x2="45" y2="100" stroke="white" stroke-width="3" />
+      <line x1="60" y1="60" x2="90" y2="90" stroke="white" stroke-width="3" />
+      
+      <!-- Label - repositioned above the circle -->
+      <rect x="-150" y="-180" width="300" height="50" rx="10" ry="10" fill="#2c3e50" />
+      <text x="0" y="-148" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">EXECUTION SPEED</text>
+    </g>
+    
+    <!-- Connecting element at center -->
+    <circle cx="0" cy="0" r="40" fill="#2c3e50" />
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">+</text>
+  </g>
+  
+  <!-- Title at bottom -->
+  <rect x="150" y="530" width="900" height="60" rx="5" ry="5" fill="rgba(44, 62, 80, 0.8)" />
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">What AI Talents Do Companies Truly Need in the Age of Ubiquitous AI?</text>
+</svg>
