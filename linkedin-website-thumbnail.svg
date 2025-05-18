@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with professional gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#4a6491" />
+    </linearGradient>
+    
+    <!-- Subtle pattern overlay -->
+    <pattern id="subtlePattern" patternUnits="userSpaceOnUse" width="50" height="50">
+      <circle cx="25" cy="25" r="1" fill="#ffffff" opacity="0.05" />
+      <circle cx="0" cy="0" r="1" fill="#ffffff" opacity="0.05" />
+      <circle cx="0" cy="50" r="1" fill="#ffffff" opacity="0.05" />
+      <circle cx="50" cy="0" r="1" fill="#ffffff" opacity="0.05" />
+      <circle cx="50" cy="50" r="1" fill="#ffffff" opacity="0.05" />
+    </pattern>
+    
+    <!-- Neural network pattern for brain -->
+    <pattern id="neuralPattern" patternUnits="userSpaceOnUse" width="100" height="100">
+      <circle cx="25" cy="25" r="3" fill="#64b5f6" opacity="0.7" />
+      <circle cx="75" cy="50" r="4" fill="#64b5f6" opacity="0.6" />
+      <circle cx="50" cy="75" r="3" fill="#64b5f6" opacity="0.7" />
+      <circle cx="10" cy="90" r="2" fill="#64b5f6" opacity="0.8" />
+      <circle cx="90" cy="10" r="4" fill="#64b5f6" opacity="0.6" />
+      <line x1="25" y1="25" x2="75" y2="50" stroke="#64b5f6" stroke-width="1" opacity="0.5" />
+      <line x1="75" y1="50" x2="50" y2="75" stroke="#64b5f6" stroke-width="1" opacity="0.5" />
+      <line x1="10" y1="90" x2="50" y2="75" stroke="#64b5f6" stroke-width="1" opacity="0.5" />
+      <line x1="90" y1="10" x2="75" y2="50" stroke="#64b5f6" stroke-width="1" opacity="0.5" />
+    </pattern>
+    
+    <!-- Clip path for rounded corners -->
+    <clipPath id="roundedCorners">
+      <rect x="0" y="0" width="1200" height="628" rx="12" ry="12" />
+    </clipPath>
+  </defs>
+  
+  <!-- Main background with pattern overlay -->
+  <g clip-path="url(#roundedCorners)">
+    <rect width="100%" height="100%" fill="url(#bgGradient)" />
+    <rect width="100%" height="100%" fill="url(#subtlePattern)" />
+    
+    <!-- Abstract flowing line representing a running path and creativity -->
+    <path d="M-100,400 C200,450 400,350 600,400 S900,500 1300,450" 
+          stroke="#ffffff" stroke-width="4" fill="none" opacity="0.15" />
+    <path d="M-100,430 C250,500 450,380 650,430 S950,520 1300,470" 
+          stroke="#ffffff" stroke-width="3" fill="none" opacity="0.1" />
+          
+    <!-- Abstract brain shape with neural network -->
+    <g transform="translate(900, 300) scale(0.7)">
+      <path d="M0,0 Q50,-50 100,0 Q150,-50 200,0 Q250,-50 300,0 Q350,-50 400,0 Q450,-50 500,0 
+               Q500,100 400,150 Q450,200 400,250 Q450,300 400,350 Q350,400 300,350 Q250,400 200,350 
+               Q150,400 100,350 Q50,400 0,350 Q-50,300 0,250 Q-50,200 0,150 Q-50,100 0,0" 
+            fill="#1a365d" fill-opacity="0.7" />
+      <path d="M0,0 Q50,-50 100,0 Q150,-50 200,0 Q250,-50 300,0 Q350,-50 400,0 Q450,-50 500,0 
+               Q500,100 400,150 Q450,200 400,250 Q450,300 400,350 Q350,400 300,350 Q250,400 200,350 
+               Q150,400 100,350 Q50,400 0,350 Q-50,300 0,250 Q-50,200 0,150 Q-50,100 0,0" 
+            fill="url(#neuralPattern)" fill-opacity="0.5" />
+    </g>
+    
+    <!-- Stylized running figure -->
+    <g transform="translate(250, 340) scale(1.2)">
+      <!-- Head -->
+      <circle cx="25" cy="20" r="12" fill="#ffffff" />
+      
+      <!-- Body -->
+      <line x1="25" y1="32" x2="25" y2="70" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+      
+      <!-- Arms in dynamic position -->
+      <line x1="25" y1="45" x2="0" y2="30" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+      <line x1="25" y1="45" x2="50" y2="40" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+      
+      <!-- Legs in running motion -->
+      <line x1="25" y1="70" x2="0" y2="100" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+      <line x1="25" y1="70" x2="55" y2="90" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+    </g>
+    
+    <!-- Light beams connecting runner to brain -->
+    <path d="M295,360 C400,300 500,320 650,300" stroke="#64b5f6" stroke-width="3" stroke-dasharray="10,8" fill="none" opacity="0.7" />
+    
+    <!-- Website domain with highlight -->
+    <rect x="240" y="150" width="720" height="70" rx="35" ry="35" fill="#ffffff" opacity="0.1" />
+    <text x="600" y="200" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#ffffff">dr-zihao-wang.org</text>
+    
+    <!-- Name display -->
+    <text x="600" y="120" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="#ffffff">Dr. Zihao Wang</text>
+    
+    <!-- Tagline that connects to the innovation theme -->
+    <text x="600" y="500" font-family="Arial, sans-serif" font-size="36" font-weight="normal" text-anchor="middle" fill="#ffffff" opacity="0.9">Where Movement Meets Innovation</text>
+    
+    <!-- Subtle accent elements -->
+    <circle cx="150" cy="150" r="50" fill="#64b5f6" opacity="0.1" />
+    <circle cx="1050" cy="500" r="70" fill="#64b5f6" opacity="0.1" />
+    
+    <!-- LinkedIn-style indicator -->
+    <g transform="translate(50, 50)">
+      <rect x="0" y="0" width="140" height="40" rx="5" ry="5" fill="#0077b5" opacity="0.9" />
+      <text x="70" y="27" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">FEATURED</text>
+    </g>
+  </g>
+</svg>
