@@ -73,12 +73,13 @@ const Blog = () => {
       
       <div className="container py-16">
         <Tabs defaultValue="All" className="mb-10">
-          <TabsList className="grid grid-cols-3 md:grid-cols-6 mb-8">
+          <TabsList className="flex overflow-x-auto flex-nowrap snap-x snap-mandatory gap-2 mb-8 px-1 py-2 bg-white rounded-lg">
             {categories.map(category => (
-              <TabsTrigger 
-                key={category} 
+              <TabsTrigger
+                key={category}
                 value={category}
                 onClick={() => setActiveCategory(category)}
+                className="min-w-max px-4 py-2 snap-center whitespace-nowrap font-semibold"
               >
                 {category}
               </TabsTrigger>
