@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Contact</h1>
           <p className="text-lg text-center text-muted-foreground max-w-2xl mx-auto mb-6">
-            I'm always interested in new opportunities, collaborations, or just connecting with fellow AI enthusiasts.
+            I'm always interested in connecting with fellow AI enthusiasts.
             Feel free to reach out on <a 
               href="https://www.linkedin.com/in/zihao-wang-ph-d-26a66953/" 
               target="_blank"

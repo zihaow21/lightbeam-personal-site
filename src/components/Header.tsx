@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="text-xl font-bold flex items-center gap-2">
+        <Link to="/" className="text-sm sm:text-xl font-bold flex items-center gap-2 sm:whitespace-nowrap">
           Zihao Wang, Ph.D.
         </Link>
         

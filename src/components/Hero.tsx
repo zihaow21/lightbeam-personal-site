@@ -13,7 +13,7 @@ const Hero = () => {
             Zihao Wang, Ph.D.
           </h1>
           <h2 className="text-2xl md:text-3xl text-muted-foreground mt-4">
-            AI & Data Science Leader & Entrepreneur
+            AI & Data Science Leader & Researcher
           </h2>
           <div className="mt-6">
             <Button asChild size="lg">
@@ -31,10 +31,7 @@ const Hero = () => {
                   With a Ph.D. in Computer Science from Emory University and a Master of Engineering from Carnegie Mellon University, I have a multidisciplinary foundation in AI and engineering.
                 </p>
                 <p>
-                  My career bridges academic research, industry, leadership, and entrepreneurship. I've led the development of large-scale systems across domains—ranging from conversational AI and structural monitoring to data analytics platforms and e-commerce optimization. I led and participated in building a team at Emory University to first place in the Amazon Alexa Prize competition in 2019 to create a state-of-the-art socialbot, and later developed AI-powered solutions for Walgreens and Clarvos, solving complex business problems through scalable innovation.
-                </p>
-                <p>
-                  As the co-founder of BridgeMind AI, I've led the strategic design and technical execution of AI-driven platforms—including risk monitoring and implementation systems, automated application review engines, and commercial search and retrieval frameworks.
+                  My career bridges academic research, industry, and leadership. I've led the development of large-scale systems across domains—ranging from conversational AI and structural monitoring to data analytics platforms and e-commerce optimization. I led and participated in building a team at Emory University to first place in the Amazon Alexa Prize competition in 2019 to create a state-of-the-art socialbot, and later developed AI-powered solutions for Walgreens and Clarvos, solving complex business problems through scalable innovation.
                 </p>
                 <p>
                   I'm passionate about transforming cutting-edge AI into practical applications that close the gap between research and real-world impact.

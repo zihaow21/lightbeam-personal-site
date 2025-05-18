@@ -5,6 +5,13 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const publications = [
   {
+    title: "Contextual Embedding Representations for Retrieval-Based and Generation-Based Dialogue Systems",
+    authors: "Wang, Zihao",
+    journal: "Ph.D. Dissertation, Spring 2023",
+    link: "https://etd.library.emory.edu/concern/etds/dz010r397",
+    isDissertation: true
+  },
+  {
     title: "InterviewBot: Real-Time End-to-End Dialogue System for Interviewing Students for College Admission",
     authors: "Wang, Z.; Keyes, N.; Crawford, T.; Choi, J.D.",
     journal: "Information 2023, 14, 460"
@@ -59,23 +66,25 @@ const PublicationsSection = () => {
     <section className="py-16 bg-background">
       <div className="container">
         <h2 className="text-3xl font-bold mb-10 text-center">Publications</h2>
-        <div className="mt-8 mb-6 text-center">
-          <Button variant="outline" asChild>
-            <a href="https://etd.library.emory.edu/concern/etds/dz010r397" target="_blank" rel="noopener noreferrer">
-              View Ph.D. Dissertation
-            </a>
-          </Button>
-        </div>
         
         <div className="grid gap-6">
           {displayedPublications.map((pub, idx) => (
             <Card key={idx}>
-              <CardHeader>
-                <CardTitle className="text-lg">{pub.title}</CardTitle>
+              <CardHeader className="relative">
+                <CardTitle className="text-lg flex items-center gap-2">
+                  {pub.title}
+                  {pub.isDissertation && (
+                    <span className="ml-2 px-2 py-0.5 rounded bg-primary text-white text-xs font-semibold">Ph.D. Dissertation</span>
+                  )}
+                </CardTitle>
                 <CardDescription>{pub.authors}</CardDescription>
               </CardHeader>
               <CardContent className="flex flex-wrap justify-between items-center">
-                <div className="text-muted-foreground">{pub.journal}</div>
+                <div className="text-muted-foreground">
+                  {pub.link ? (
+                    <a href={pub.link} target="_blank" rel="noopener noreferrer" className="underline">{pub.journal}</a>
+                  ) : pub.journal}
+                </div>
               </CardContent>
             </Card>
           ))}
