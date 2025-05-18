@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient representing morning sky -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94c5f8" />
+      <stop offset="50%" stop-color="#c4e0f9" />
+      <stop offset="100%" stop-color="#e8f4fd" />
+    </linearGradient>
+    
+    <!-- Path for the running trail -->
+    <path id="runningPath" d="M50,380 Q200,320 400,350 T750,300" fill="none" />
+    
+    <!-- Brain pattern with idea connections -->
+    <pattern id="brainPattern" patternUnits="userSpaceOnUse" width="100" height="100">
+      <circle cx="25" cy="25" r="3" fill="#3f7fbf" opacity="0.5" />
+      <circle cx="75" cy="50" r="4" fill="#3f7fbf" opacity="0.4" />
+      <circle cx="50" cy="75" r="5" fill="#3f7fbf" opacity="0.3" />
+      <circle cx="10" cy="90" r="2" fill="#3f7fbf" opacity="0.6" />
+      <circle cx="90" cy="10" r="4" fill="#3f7fbf" opacity="0.5" />
+      <line x1="25" y1="25" x2="75" y2="50" stroke="#3f7fbf" stroke-width="1" opacity="0.3" />
+      <line x1="75" y1="50" x2="50" y2="75" stroke="#3f7fbf" stroke-width="1" opacity="0.3" />
+      <line x1="10" y1="90" x2="50" y2="75" stroke="#3f7fbf" stroke-width="1" opacity="0.3" />
+      <line x1="90" y1="10" x2="75" y2="50" stroke="#3f7fbf" stroke-width="1" opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)" />
+  
+  <!-- Brain thought cloud in the background -->
+  <path d="M500,100 Q600,50 650,120 Q720,100 730,170 Q780,190 750,240 Q780,290 730,310 Q720,380 650,360 Q600,430 500,380 Q400,430 350,360 Q280,380 270,310 Q220,290 250,240 Q220,190 270,170 Q280,100 350,120 Q400,50 500,100" 
+        fill="white" fill-opacity="0.8" />
+  
+  <!-- Thought patterns inside the brain -->
+  <path d="M500,100 Q600,50 650,120 Q720,100 730,170 Q780,190 750,240 Q780,290 730,310 Q720,380 650,360 Q600,430 500,380 Q400,430 350,360 Q280,380 270,310 Q220,290 250,240 Q220,190 270,170 Q280,100 350,120 Q400,50 500,100" 
+        fill="url(#brainPattern)" fill-opacity="0.7" />
+  
+  <!-- Green hills in the foreground -->
+  <path d="M0,450 L0,380 Q200,320 400,350 T800,300 L800,450 Z" fill="#7cba77" />
+  <path d="M0,450 L0,390 Q150,360 350,380 T800,330 L800,450 Z" fill="#91cf8c" />
+  
+  <!-- Running path/trail -->
+  <path d="M0,400 Q150,370 350,390 T800,340" stroke="#d6c6a8" stroke-width="8" stroke-linecap="round" fill="none" />
+  
+  <!-- Runner silhouette -->
+  <g transform="translate(200, 355) scale(0.6)">
+    <!-- Head -->
+    <circle cx="25" cy="20" r="10" fill="#333333" />
+    
+    <!-- Body -->
+    <line x1="25" y1="30" x2="25" y2="60" stroke="#333333" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Arms in running position -->
+    <line x1="25" y1="40" x2="5" y2="25" stroke="#333333" stroke-width="5" stroke-linecap="round" />
+    <line x1="25" y1="40" x2="45" y2="35" stroke="#333333" stroke-width="5" stroke-linecap="round" />
+    
+    <!-- Legs in running position -->
+    <line x1="25" y1="60" x2="5" y2="85" stroke="#333333" stroke-width="5" stroke-linecap="round" />
+    <line x1="25" y1="60" x2="50" y2="75" stroke="#333333" stroke-width="5" stroke-linecap="round" />
+  </g>
+  
+  <!-- Lightbulb idea coming from brain to runner -->
+  <g transform="translate(390, 260) scale(1.2)">
+    <path d="M0,0 Q-5,-15 -15,-20 Q-25,-27 -15,-35 Q-5,-42 5,-35 Q15,-27 5,-20 Q0,-15 0,0" fill="#FFD700" />
+    <path d="M-5,0 L5,0 L5,5 L-5,5 Z" fill="#FFD700" />
+    <path d="M-3,5 L3,5 L3,8 L-3,8 Z" fill="#FFD700" />
+  </g>
+  
+  <!-- Title with a subtle highlight -->
+  <text x="50" y="80" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#333333">Running into Innovation</text>
+  <text x="50" y="130" font-family="Arial, sans-serif" font-size="28" fill="#3f7fbf">How Sports Fuel Creativity</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="730" cy="80" r="40" fill="#FFD700" fill-opacity="0.2" />
+  <circle cx="700" cy="55" r="15" fill="#FFD700" fill-opacity="0.4" />
+  
+  <!-- Small idea nodes around the image -->
+  <circle cx="100" cy="200" r="8" fill="#3f7fbf" fill-opacity="0.5" />
+  <circle cx="150" cy="150" r="6" fill="#3f7fbf" fill-opacity="0.4" />
+  <circle cx="250" cy="180" r="7" fill="#3f7fbf" fill-opacity="0.6" />
+  <circle cx="650" cy="180" r="9" fill="#3f7fbf" fill-opacity="0.5" />
+  <circle cx="600" cy="220" r="5" fill="#3f7fbf" fill-opacity="0.4" />
+  
+  <!-- Connecting lines for idea nodes -->
+  <line x1="100" y1="200" x2="150" y2="150" stroke="#3f7fbf" stroke-width="1.5" stroke-opacity="0.3" />
+  <line x1="150" y1="150" x2="250" y2="180" stroke="#3f7fbf" stroke-width="1.5" stroke-opacity="0.3" />
+  <line x1="600" y1="220" x2="650" y2="180" stroke="#3f7fbf" stroke-width="1.5" stroke-opacity="0.3" />
+</svg>
